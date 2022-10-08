@@ -1,16 +1,7 @@
 var input = require('fs').readFileSync('stdin', 'utf8');
 var lines = input.split('\n');
 
-var a = parseFloat(lines[0])
-var b = parseFloat(lines[1])
-
-function media () {
-    aa = a * 0.35
-    bb = b * 0.75
-    calc = aa + bb
-    console.log('MEDIA = ' + calc.toFixed(5))
-}
-
-media()
-
-// bugado...
+var A = parseFloat(lines[0])
+var B = parseFloat(lines[1])
+MEDIA = (((A * 3.5) + (B * 7.5)) / 11).toFixed(5)
+console.log(`MEDIA = ${MEDIA}`);
