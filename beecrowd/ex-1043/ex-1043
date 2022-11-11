@@ -1,7 +1,11 @@
 var input = require('fs').readFileSync('stdin', 'utf8')
 var lines = input.split('\n')
 
-line = lines[0].split(' ')
+var line = lines[0].split(' ')
+
+aa = parseFloat(line[0])
+bb = parseFloat(line[1])
+cc = parseFloat(line[2])
 
 function ord(a, b) {
     return a - b
@@ -9,6 +13,16 @@ function ord(a, b) {
 
 line.sort(ord)
 
+a = parseFloat(line[0])
+b = parseFloat(line[1])
+c = parseFloat(line[2])
 
+if ((a + b) == c) {
+    area = 0.5 * cc * (aa + bb)
+    console.log('Area = ' + area.toFixed(1))
+}
 
-
+else {
+    perimetro = a + b + c
+    console.log('Perimetro = ' + perimetro.toFixed(1))
+}
