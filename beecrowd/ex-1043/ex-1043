@@ -1,0 +1,14 @@
+var input = require('fs').readFileSync('stdin', 'utf8')
+var lines = input.split('\n')
+
+line = lines[0].split(' ')
+
+function ord(a, b) {
+    return a - b
+}
+
+line.sort(ord)
+
+
+
+
