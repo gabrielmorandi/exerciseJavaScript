@@ -1,5 +1,5 @@
 var input = require('fs').readFileSync('stdin', 'utf8')
-var lines = input.split(' ') // tem que mandar com essa linha!
+var lines = input.split(' ') // tem que mandar com essa linha!!
 
 function ord(a, b) {
     return b - a
