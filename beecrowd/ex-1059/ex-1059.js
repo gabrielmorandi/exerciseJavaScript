@@ -1,6 +1,4 @@
-a = 0
-while (a != 100) {
-    a++
-    a++
-    console.log(a)
+for (let i = 0; i != 100; ) {
+    i += 2
+    console.log(i)
 }
